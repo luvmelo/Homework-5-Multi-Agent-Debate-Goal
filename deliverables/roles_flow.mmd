@@ -1,0 +1,17 @@
+```mermaid
+flowchart LR
+    Start([Scenario Brief]) --> Argue[Researcher: argue & propose]
+    Argue --> Critic[Critic: surface blockers]
+    Critic --> DevilGate{Devil's Advocate toggle?}
+    DevilGate -- yes --> Devil[Devil's Advocate: stress test]
+    DevilGate -- no --> Revision
+    Devil --> Revision[Researcher: revise plan]
+    Revision --> SynthGate{Synthesizer active?}
+    SynthGate -- yes --> Synthesize[Synthesizer: track convergence]
+    SynthGate -- no --> RoundRoute
+    Synthesize --> RoundRoute[Round router]
+    RoundRoute -->|more rounds| Argue
+    RoundRoute -->|final round| Judge[Judge: rubric verdict]
+    Judge --> End([Final decision])
+```
+

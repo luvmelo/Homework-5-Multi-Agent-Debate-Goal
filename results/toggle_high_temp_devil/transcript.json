@@ -1,0 +1,156 @@
+{
+  "config": {
+    "key": "toggle_high_temp_devil",
+    "title": "High-temperature debate with devil's advocate pressure test",
+    "scenario": "City advisers and housing authority must determine whether to green-light a microgrid pilot that combines solar, storage, and demand response for Riverside Homes.",
+    "acceptance_criteria": [
+      "Quantify energy savings and payback < 10 years.",
+      "Demonstrate an implementation timeline that protects tenants during construction.",
+      "De-risk financial exposure if grant funding shifts.",
+      "Communicate clearly enough for a city council vote."
+    ],
+    "rounds": 2,
+    "temperature": 0.8,
+    "agent_mode": "full",
+    "include_synthesizer": true,
+    "include_devil": true,
+    "seed": 69,
+    "notes": "Toggle 2 \u2014 raise temperature and add devil's advocate for stress test."
+  },
+  "scores": {
+    "evidence": 4,
+    "feasibility": 5,
+    "risks": 4,
+    "clarity": 4
+  },
+  "decision": "\u2705 Recommend go/no-go: APPROVE pilot with defined guardrails.",
+  "consensus_reached": true,
+  "convergence_notes": [
+    "agreement",
+    "agreement",
+    "Convergence achieved; no open blockers remain."
+  ],
+  "open_issues": [
+    {
+      "key": "Load-model mismatch",
+      "description": "Peak winter load (1.6 MW) exceeds storage output; outage coverage unclear.",
+      "raised_by": "Critic",
+      "raised_round": 1,
+      "resolved_round": 1,
+      "status": "resolved"
+    },
+    {
+      "key": "Tenant safeguards",
+      "description": "Need signed policy guaranteeing minimum 15% bill reduction in first year.",
+      "raised_by": "Critic",
+      "raised_round": 1,
+      "resolved_round": 1,
+      "status": "resolved"
+    },
+    {
+      "key": "Regulatory whiplash",
+      "description": "Rule changes on community solar crediting could erode projected savings by up to 35%.",
+      "raised_by": "Devil's Advocate",
+      "raised_round": 1,
+      "resolved_round": 2,
+      "status": "resolved"
+    },
+    {
+      "key": "Capital gap",
+      "description": "Even with grants there is a $310k funding hole; what bridge financing covers it?",
+      "raised_by": "Critic",
+      "raised_round": 2,
+      "resolved_round": 2,
+      "status": "resolved"
+    }
+  ],
+  "resolved_actions": [
+    "Secure MassCEC grant agreement signature by week 6.",
+    "Train onsite maintenance staff on battery O&M before commissioning.",
+    "Resized storage to 3.1 MWh with demand response; outage coverage meets 10-hour target.",
+    "Drafted bilingual tenant benefit charter; legal review scheduled for next Tuesday.",
+    "File interconnection application with Eversource in month 2; expedite via municipal liaison.",
+    "Phase construction so the community center island mode goes live by month 8.",
+    "Structured savings sharing clause so tenants insulated from net-metering cuts.",
+    "Proposed using Inflation Reduction Act elective pay plus city green bond bridge."
+  ],
+  "transcript": [
+    {
+      "round": 1,
+      "stage": "argue",
+      "speaker": "Alex Morgan",
+      "role": "Researcher",
+      "content": "**Round 1 focus:** Stage microgrid commissioning so that tenant benefits show up in billing by month six.\n\n**Scenario snapshot:** Cambridge Housing Authority seeks a 650 kW solar + 2.5 MWh storage microgrid at Riverside Homes to shave bills ~18% while providing 8-hour outage resilience.\n\n**Evidence highlights:**\n- Greenspark EPC bid locks in $1.95/W turnkey price with performance bonding.\n- Tenant energy burden currently 12% of income; housing authority aims to cut to 8%.\n- Microgrid control tested in Worcester pilot reduced outage downtime by 72%.\n\n**Implementation path:**\n1. Secure MassCEC grant agreement signature by week 6.\n2. Train onsite maintenance staff on battery O&M before commissioning.\n3. Run tenant co-design workshops to codify bill credit policy by week 9.\n\n**Risk watchlist:**\n- Storage degradation assumptions rely on 4,000 cycles; need warranty alignment.\n- Tenant savings must be codified in lease amendments to avoid billing disputes."
+    },
+    {
+      "round": 1,
+      "stage": "critique",
+      "speaker": "Jordan Lee",
+      "role": "Critic",
+      "content": "**Round 1 critique:** Focusing on stubborn weaknesses.\n\n**Major concerns:**\n- Load-model mismatch: Peak winter load (1.6 MW) exceeds storage output; outage coverage unclear.\n- Tenant safeguards: Need signed policy guaranteeing minimum 15% bill reduction in first year.\n\n**Clarifying asks:**\n- What is the fallback if MassCEC funding slips a quarter?\n- How will tenant training handle language access for Cantonese and Spanish speakers?\n\n**Risk posture:** Residual risk currently sits at medium-high because monetized resilience value is still assumptive."
+    },
+    {
+      "round": 1,
+      "stage": "devil",
+      "speaker": "Casey Vega",
+      "role": "Devil's Advocate",
+      "content": "**Devil's Advocate (Round 1):** Stress-testing optimism.\n\n**Contrarian evidence:**\n- Tenant trust can fray if bills lag behind savings; once lost, political capital is gone.\n- If ISO-NE enforces new dual participation rules, the revenue stack could collapse.\n\n**Worst-case storyline:** In a downside market, the co-op could face a $220k funding hole.\n\nLet's force the team to show contingency math before we pretend consensus exists."
+    },
+    {
+      "round": 1,
+      "stage": "revise",
+      "speaker": "Alex Morgan",
+      "role": "Researcher",
+      "content": "**Researcher revision (Round 1):** Integrating critiques into the plan.\n\n**Adjustments committed:**\n- Resized storage to 3.1 MWh with demand response; outage coverage meets 10-hour target.\n- Drafted bilingual tenant benefit charter; legal review scheduled for next Tuesday.\n\n**Fresh evidence:** Secured EPC letter committing to $1.92/W turnkey cap backed by performance guarantees.\n\n**Next actions:** Kick off tenant co-design workshop and lock interconnection study date."
+    },
+    {
+      "round": 1,
+      "stage": "synthesize",
+      "speaker": "Priya Singh",
+      "role": "Synthesizer",
+      "content": "**Synthesizer (Round 1 wrap):** We are close to consensus.\n\n**Outstanding issues:** Regulatory whiplash\n\n**Progress markers:**\n- Resized storage to 3.1 MWh with demand response; outage coverage meets 10-hour target.\n- Drafted bilingual tenant benefit charter; legal review scheduled for next Tuesday.\n\n**Narrative to brief stakeholders:** Revision landed real movement on tenant protections."
+    },
+    {
+      "round": 2,
+      "stage": "argue",
+      "speaker": "Alex Morgan",
+      "role": "Researcher",
+      "content": "**Round 2 focus:** Bundle solar, storage, and demand response to guarantee 18% utility savings.\n\n**Scenario snapshot:** Cambridge Housing Authority seeks a 650 kW solar + 2.5 MWh storage microgrid at Riverside Homes to shave bills ~18% while providing 8-hour outage resilience.\n\n**Evidence highlights:**\n- Tenant energy burden currently 12% of income; housing authority aims to cut to 8%.\n- Synapse 2024 load study shows average winter peak 1.32 MW; solar covers 48% daytime load.\n- Microgrid control tested in Worcester pilot reduced outage downtime by 72%.\n\n**Implementation path:**\n1. File interconnection application with Eversource in month 2; expedite via municipal liaison.\n2. Phase construction so the community center island mode goes live by month 8.\n3. Run tenant co-design workshops to codify bill credit policy by week 9.\n\n**Risk watchlist:**\n- Outstanding review items: Regulatory whiplash\n- Storage degradation assumptions rely on 4,000 cycles; need warranty alignment.\n- Sponsor must model winter storm islanding scenario explicitly.\n\n**Addressing prior critique:** Feedback last round: **Devil's Advocate (Round 1):** Stress-testing optimism.\n\n**Contrarian evidence:**\n- Tenant trust can fray if bills lag behind savings; once lost, political capital is gone.\n- If ISO-NE enforces new dual participation rules, the revenue stack could collapse.\n\n**Worst-case storyline:** In a downside market, the co-op could face a $220k funding hole.\n\nLet's force the team to show contingency math before we pretend consensus exists."
+    },
+    {
+      "round": 2,
+      "stage": "critique",
+      "speaker": "Jordan Lee",
+      "role": "Critic",
+      "content": "**Round 2 critique:** Focusing on stubborn weaknesses.\n\n**Major concerns:**\n- Load-model mismatch: Peak winter load (1.6 MW) exceeds storage output; outage coverage unclear.\n- Tenant safeguards: Need signed policy guaranteeing minimum 15% bill reduction in first year.\n- Regulatory whiplash: Rule changes on community solar crediting could erode projected savings by up to 35%.\n- Capital gap: Even with grants there is a $310k funding hole; what bridge financing covers it?\n\n**Clarifying asks:**\n- How will tenant training handle language access for Cantonese and Spanish speakers?\n- Who owns cybersecurity risk once the microgrid controller is online?\n\n**Risk posture:** Residual risk currently sits at medium-high because monetized resilience value is still assumptive."
+    },
+    {
+      "round": 2,
+      "stage": "devil",
+      "speaker": "Casey Vega",
+      "role": "Devil's Advocate",
+      "content": "**Devil's Advocate (Round 2):** Stress-testing optimism.\n\n**Contrarian evidence:**\n- A stalled interconnection queue could delay energization by 18 months, nullifying cost savings.\n- Tenant trust can fray if bills lag behind savings; once lost, political capital is gone.\n\n**Worst-case storyline:** In a downside market, the co-op could face a $220k funding hole.\n\nLet's force the team to show contingency math before we pretend consensus exists."
+    },
+    {
+      "round": 2,
+      "stage": "revise",
+      "speaker": "Alex Morgan",
+      "role": "Researcher",
+      "content": "**Researcher revision (Round 2):** Integrating critiques into the plan.\n\n**Adjustments committed:**\n- Structured savings sharing clause so tenants insulated from net-metering cuts.\n- Proposed using Inflation Reduction Act elective pay plus city green bond bridge.\n\n**Fresh evidence:** Validated storage dispatch model against ISO-NE winter peaks; 90% of outage use case holds.\n\n**Next actions:** Kick off tenant co-design workshop and lock interconnection study date."
+    },
+    {
+      "round": 2,
+      "stage": "synthesize",
+      "speaker": "Priya Singh",
+      "role": "Synthesizer",
+      "content": "**Synthesizer (Round 2 wrap):** We are close to consensus.\n\n**Outstanding issues:** none\n\n**Progress markers:**\n- Structured savings sharing clause so tenants insulated from net-metering cuts.\n- Proposed using Inflation Reduction Act elective pay plus city green bond bridge.\n\n**Narrative to brief stakeholders:** Revision landed real movement on tenant protections."
+    },
+    {
+      "round": 2,
+      "stage": "verdict",
+      "speaker": "Morgan Kim",
+      "role": "Judge",
+      "content": "**Judge verdict:**\n\n\u2705 Recommend go/no-go: APPROVE pilot with defined guardrails.\n\nEvidence score 4 \u2014 data packs are substantive.\nFeasibility score 5 \u2014 execution path mostly credible.\nRisks score 4 \u2014 unresolved items: none\nClarity score 4 \u2014 story is almost board-ready.\n**Convergence read:** Convergence achieved; no open blockers remain.\n\n**Next step I require:** deliver risk register sign-off and regulatory contingency memo."
+    }
+  ]
+}

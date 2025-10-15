@@ -1,0 +1,44 @@
+[
+  {
+    "config": "baseline_full_lowtemp",
+    "rounds": 2,
+    "agents": "full",
+    "temperature": 0.35,
+    "decision": "\u2705 Recommend go/no-go: APPROVE pilot with defined guardrails.",
+    "consensus": true,
+    "avg_score": 4.25,
+    "score_evidence": 4,
+    "score_feasibility": 5,
+    "score_risks": 4,
+    "score_clarity": 4,
+    "unresolved_issues": []
+  },
+  {
+    "config": "toggle_two_agent",
+    "rounds": 2,
+    "agents": "two_agent",
+    "temperature": 0.35,
+    "decision": "\u2705 Recommend go/no-go: APPROVE pilot with defined guardrails.",
+    "consensus": true,
+    "avg_score": 4.0,
+    "score_evidence": 4,
+    "score_feasibility": 5,
+    "score_risks": 4,
+    "score_clarity": 3,
+    "unresolved_issues": []
+  },
+  {
+    "config": "toggle_high_temp_devil",
+    "rounds": 2,
+    "agents": "full",
+    "temperature": 0.8,
+    "decision": "\u2705 Recommend go/no-go: APPROVE pilot with defined guardrails.",
+    "consensus": true,
+    "avg_score": 4.25,
+    "score_evidence": 4,
+    "score_feasibility": 5,
+    "score_risks": 4,
+    "score_clarity": 4,
+    "unresolved_issues": []
+  }
+]

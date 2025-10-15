@@ -1,0 +1,4 @@
+config,rounds,agents,temperature,decision,consensus,avg_score,score_evidence,score_feasibility,score_risks,score_clarity,unresolved_issues
+baseline_full_lowtemp,2,full,0.35,✅ Recommend go/no-go: APPROVE pilot with defined guardrails.,True,4.25,4,5,4,4,
+toggle_two_agent,2,two_agent,0.35,✅ Recommend go/no-go: APPROVE pilot with defined guardrails.,True,4.0,4,5,4,3,
+toggle_high_temp_devil,2,full,0.8,✅ Recommend go/no-go: APPROVE pilot with defined guardrails.,True,4.25,4,5,4,4,

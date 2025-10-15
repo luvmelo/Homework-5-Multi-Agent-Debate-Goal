@@ -1,0 +1,18 @@
+[
+  {
+    "metric": "evidence",
+    "score": 4
+  },
+  {
+    "metric": "feasibility",
+    "score": 5
+  },
+  {
+    "metric": "risks",
+    "score": 4
+  },
+  {
+    "metric": "clarity",
+    "score": 3
+  }
+]
